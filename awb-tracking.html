@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Shipment | AWB</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/awb-tracking.css">
+</head>
+<body>
+
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="container">
+
+            <!-- Left Text -->
+            <div class="hero-text">
+                <h1>
+                    Track Your <span>Shipment</span><br />
+                    Using AWB Number
+                </h1>
+                <p>
+                    Fast, reliable shipment tracking across our logistics network.
+                </p>
+            </div>
+
+            <!-- Tracking Card -->
+            <div class="track-card">
+                <h3>Track Order</h3>
+
+                <form method="get" action="http://3.111.146.23//shipmentTracking.aspx">
+                    <input
+                        type="text"
+                        name="awbno"
+                        placeholder="Enter your AWB number"
+                        required
+                    />
+                    <button type="submit">Track Shipment</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
