@@ -703,6 +703,68 @@ body{
 .button input[type="button"]:hover{
   background: #5029bc;
 }
+/* =========================
+   SECTION SYSTEM (GLOBAL)
+========================= */
+
+.section {
+  padding: 90px 0;
+}
+
+.section-inner {
+  width: 90%;
+  max-width: 1320px;
+  margin: auto;
+}
+
+.section--light {
+  background: #ffffff;
+}
+
+.section--soft {
+  background: #f8fafc;
+}
+
+.section--dark {
+  background: radial-gradient(circle at top, #111827, #000);
+  color: #fff;
+}
+
+/* Optional divider */
+.section + .section {
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+.page-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(15, 23, 42, 0.25),
+    transparent
+  );
+}
+.page-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    #0ea5e9,
+    #2563eb
+  );
+  opacity: 0.6;
+}
 
 /* @media (max-width: 950px) {
   .container{
