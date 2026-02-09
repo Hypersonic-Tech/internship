@@ -269,7 +269,7 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #18272F;
+  color: #e0ebf0;
   font-weight: 700;
   vertical-align: top;
   font-family: 'Poppins', sans-serif;
@@ -285,7 +285,7 @@
 }
 
 #style-2::before {
-  background-color: #070000f5;
+  background-color: #e8dbdb;
   height: 2px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -300,7 +300,7 @@
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #0c267a;
+  color: #e5eaf6;
 }
 
 #style-2:hover::before {

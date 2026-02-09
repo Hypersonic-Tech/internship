@@ -44,6 +44,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet" />
+<!-- logistics css -->
+    <link rel="stylesheet" href="css/logistics-showcase.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
 
 </head>
 
@@ -173,9 +177,9 @@
 
         <div class="Process_heading">
         <p id="process_fontsize">
-            How We Move Your Shipment
-            <a href="#" id="style-2" data-replace="SHIPMENT PROCESS">
-            <span id="process_fontsize">Shipment Process</span>
+            How We Move Your
+            <a href="#" id="style-2" data-replace="Process">
+            <span id="process_fontsize">  Shipment  </span>
             </a>
         </p>
         </div>
@@ -413,57 +417,103 @@
 
     <!-- Service End -->
 
-    <section class="page-section section--soft">
-        <div class="section-inner">
-            <!-- Feature Start -->
-            <div class="-fluid overflow-hidden py-5 px-lg-0">
-                <div class=" feature py-5 px-lg-0">
-                    <div class="row g-5 mx-lg-0">
-                        <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="text-secondary text-uppercase mb-3">Our Features</h6>
-                            <h1 class="mb-5">We Are Trusted Logistics Company Since 1990</h1>
-                            <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
-                                <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
-                                <div class="ms-4">
-                                    <h5>Worldwide Service</h5>
-                                    <p class="mb-0">We are an Indian Logistics & Supply delivery services throughout
-                                        India and
-                                        across the globe. We understand the different needs of our customers.
-                                        Our services include:</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
-                                <i class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
-                                <div class="ms-4">
-                                    <h5>On Time Delivery</h5>
-                                    <p class="mb-0">We provide delivery solutions across borders for documents and
-                                        parcels</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
-                                <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
-                                <div class="ms-4">
-                                    <h5>24/7 Telephone Support</h5>
-                                    <p class="mb-0">For Business Query, Contact Below Telephone Nos. on Monday to
-                                        Saturday
-                                        Between 10:00 AM & 5:30 PM.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg"
-                                    style="object-fit: cover;" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Logistics Showcase Start -->
+<div class="logistics-showcase py-5">
+
+    <div class="container-fluid">
+        <div class="row align-items-center g-5">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Our Network</h6>
+                <h1 class="mb-4">Delivering Excellence Across India & Beyond</h1>
+                <p class="mb-4">
+                    Driven by a strong nationwide and global logistics network, supported by intelligent tracking solutions and a committed operations force, we guarantee smooth and efficient transportation of goods. Reliability, speed, and customer trust are the pillars of our service.
+                </p>
+
+                <a href="#" class="btn btn-primary px-4 py-2">Explore Services</a>
             </div>
-            <!-- Feature End -->
+
+            <!-- RIGHT SLIDER -->
+            <div class="col-lg-6">
+
+                <div class="swiper logistics-swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide position-relative">
+                            <img src="img/logistics1.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="logistics-overlay">
+                                <h5>International Delievery</h5>
+                                <p>Fast & secure global forwarding solutions.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide position-relative">
+                            <img src="img/logistics2.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="logistics-overlay">
+                                <h5>Express Delivery</h5>
+                                <p>Time-bound parcel delivery across major cities.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide position-relative">
+                            <img src="img/logistics3.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="logistics-overlay">
+                                <h5>Warehousing Solutions</h5>
+                                <p>Secure storage & inventory management services.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide position-relative">
+                            <img src="img/logistics4.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="logistics-overlay">
+                                <h5>Bulk Transportation</h5>
+                                <p>Efficient road transport for heavy consignments.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    </section>
+    </div>
+
+</div>
+<!-- Logistics Showcase End -->
+
     </div>
     </div>
+<!-- logistics js -->
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var logisticsSwiper = new Swiper(".logistics-swiper", {
+        effect: "cube",
+        grabCursor: true,
+        loop: true,
+        speed: 1000,
+        cubeEffect: {
+            shadow: false,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.9,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+
+});
+</script>
 
 
     <section class="page-section section--dark testimonial-section">
@@ -479,7 +529,7 @@
                         <div class="user">
                             <img src="img/user1.jpg" />
                             <div>
-                                <p class="name">Aditya Jain</p>
+                                <p class="name">Kokila Jain</p>
                                 <p class="role">Fitness Influencer</p>
                             </div>
                         </div>
@@ -491,7 +541,7 @@
                         <div class="user">
                             <img src="img/user2.jpg" />
                             <div>
-                                <p class="name">Siddhi Jain</p>
+                                <p class="name">Johny sins</p>
                                 <p class="role">Yoga Influencer</p>
                             </div>
                         </div>
@@ -503,7 +553,7 @@
                         <div class="user">
                             <img src="img/user3.jpg" />
                             <div>
-                                <p class="name">Krish Singhai</p>
+                                <p class="name">Sengai krish 69</p>
                                 <p class="role">Customer</p>
                             </div>
                         </div>
@@ -515,7 +565,7 @@
                         <div class="user">
                             <img src="img/user4.jpg" />
                             <div>
-                                <p class="name">Aman Shah</p>
+                                <p class="name">don elvish</p>
                                 <p class="role">Designer</p>
                             </div>
                         </div>
@@ -620,6 +670,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- logistics js -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,90 @@
+/* =========================================
+   LOGISTICS SHOWCASE (ISOLATED STYLES)
+========================================= */
+
+.logistics-showcase {
+    position: relative;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    overflow: hidden;
+}
+
+.logistics-showcase h1,
+.logistics-showcase h5,
+.logistics-showcase p,
+.logistics-showcase h6 {
+    color: #ffffff;
+}
+
+.logistics-showcase .btn-primary {
+    background-color: #883eff;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.logistics-showcase .btn-primary:hover {
+    background-color: #6c2dd9;
+}
+
+/* Swiper Container */
+.logistics-showcase .logistics-swiper {
+    width: 100%;
+    max-width: 450px;
+    height: 480px;
+    margin: auto;
+}
+
+/* Slide */
+.logistics-showcase .swiper-slide {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Image */
+.logistics-showcase .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.logistics-showcase .swiper-slide:hover img {
+    transform: scale(1.08);
+}
+
+/* Overlay */
+.logistics-showcase .logistics-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.logistics-showcase .logistics-overlay h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.logistics-showcase .logistics-overlay p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .logistics-showcase {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .logistics-showcase .logistics-swiper {
+        height: 420px;
+        margin-top: 40px;
+    }
+}

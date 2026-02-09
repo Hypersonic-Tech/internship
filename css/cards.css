@@ -39,7 +39,7 @@ h2 {
 
 p {
   font-family: var(--font-text);
-  font-size: 0.95rem; /* ↓ subtle reduction */
+  font-size: 1rem; /* ↓ subtle reduction */
   line-height: 1.45;
   color: var(--white);
 }
