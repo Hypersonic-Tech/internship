@@ -722,7 +722,7 @@ body{
 }
 
 .section--soft {
-  background: #f8fafc;
+  background: #a5bfd0;
 }
 
 .section--dark {
@@ -799,4 +799,27 @@ body{
    margin-left: 0;
  } */
 }
+/* css of the shipment flow */
+/* Shipment Icon Styling */
+.step-icon i {
+    font-size: 28px;
+    color: #2563eb;
+}
+
+/* Slight hover enhancement */
+.process-step:hover .step-icon i {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+/* Improve spacing for logistics content */
+.step-title {
+    font-weight: 600;
+}
+
+.step-description {
+    opacity: 0.85;
+    line-height: 1.6;
+}
+/* greyish bg */
 
