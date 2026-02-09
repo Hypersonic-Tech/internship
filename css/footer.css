@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+/* html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px;
+  } */
+
+.footer-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__about {
+  max-width: 320px;
+  margin-top: -30px;
+}
+
+.footer__logo {
+  width: 261px;
+  margin-bottom: 1rem;
+  margin-left: -60px;
+}
+
+.footer__about-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.footer__socials a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.footer__socials a:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+.footer__col_last {
+  margin-right: 50px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 10%;
+  /* padding: 3rem 0; */
+  background: #000;
+  color: #fff;
+  width: 100%;
+  /* margin-top: auto; */
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr 1fr 1fr;
+  gap: 2rem;
+  padding: 5rem 1rem 0rem;
+}
+
+
+.footer__col-title {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  margin-left: 30px;
+
+  text-transform: uppercase; /* ✅ correct */
+  font-weight: 700;          /* ✅ bold */
+
+  position: relative;
+}
+
+
+.footer__col-title::after {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff004d, #ffcc00);
+  display: block;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+
+.footer__col-title *~span {
+  margin-left: 1rem;
+
+  font-weight: bold;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a *~span {
+  margin-left: 1rem;
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+.footer__nav-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.4;
+}
+
+
+.footer__nav-list a {
+  opacity: 0.85;
+  transition: 0.25s ease;
+}
+
+.footer__nav-list a:hover {
+  opacity: 1;
+  color: #ffcc00;
+  transform: translateX(6px);
+}
+
+
+.footer__copyrights {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.footer__copyrights p {
+  margin: 0;
+}
+
+.footer__divider {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.footer__nav-item:hover {
+  color: #790101;
+  /* hover:text-[#870000] */
+  filter: drop-shadow(0 0 6px #8b2e2e);
+  /* hover:drop-shadow-[0_0_6px_#903b3b] */
+  text-decoration: underline;
+  /* hover:underline */
+  text-underline-offset: 4px;
+  /* hover:underline-offset-4 */
+  transform: scale(1.05);
+  /* hover:scale-105 */
+}
+
+.blinking-text {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #ff004d, 0 0 10px #ff004d, 0 0 20px #ffcc00;
+  letter-spacing: 3px;
+  animation: blink 1.5s infinite alternate;
+  text-align: center;
+  white-space: nowrap;
+  /* ensures it stays on one line */
+  margin-top: 1rem;
+}
+.footer__col {
+  background:#000;
+  padding: 0.2rem;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  will-change: transform;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff004d, 0 0 10px #ffcc00, 0 0 20px #ffffff;
+  }
+
+  50% {
+    opacity: 0.8;
+    text-shadow: 0 0 15px #ff004d, 0 0 25px #ffcc00, 0 0 35px #ffffff;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff004d, 0 0 10px #ff004d, 0 0 20px #ffcc00;
+  }
+}
+
+
+@keyframes parralax {
+  0% {
+    background-position: 260px;
+  }
+
+  100% {
+    background-position: -10000vw;
+  }
+}
+
+@keyframes moto {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  5% {
+    transform: translateY(0) rotate(-5deg);
+  }
+
+  25% {
+    transform: translateY(60px) rotate(-20deg);
+  }
+
+  49% {
+    transform: translateY(0) rotate(-1deg);
+  }
+
+  51% {
+    transform: translateY(0) rotate(1deg);
+  }
+
+  75% {
+    transform: translateY(60px) rotate(20deg);
+  }
+
+  80% {
+    transform: translateY(60px) rotate(0deg);
+  }
+
+  98% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes voiture {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.footer__parralax {
+  position: absolute;
+  left: 0;
+  top: -94px;
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.footer__parralax-trees{
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat-x;
+  background-position-y: 100% !important;
+  animation: parralax 600s linear infinite;
+}
+
+.footer__parralax-moto {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  margin-left: -250px;
+  height: 41px;
+  width: 150px;
+  /* background: url(https://i.ibb.co/JCGfFJd/moto-net.gif); */
+  /* background: url(../img/plane.png); */
+  background-repeat: no-repeat;
+  transform-origin: 50% 80%;
+  animation: moto 5s linear infinite;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  z-index: 2;
+  /* border:2px solid black; */
+}
+.footer__parralax-voiture {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+
+  width: 206px;
+  height: 160px;
+
+  background: url(../img/truck1.png) no-repeat center/contain;
+
+  transform: translateX(0);
+
+  animation: truckDrive 10s ease-in-out infinite;
+}
+@keyframes truckDrive {
+  0% {
+    transform: translateX(-70vw);
+  }
+
+  100% {
+    transform: translateX(60vw);
+  }
+}
+
+
+
+/* animation: voiture 1s linear infinite; */
+/* transform: rotate(180deg); */
+
+.footer__parralax-trees {
+  background-image: url(../img/Tree.png);
+  bottom: 0px;
+  animation-duration: 1000s;
+  z-index: 1;
+}
+
+/* 
+.footer__parralax-secondplan {
+  background-image: url(../img/second-plan.png);
+  animation-duration: 600s;
+} */
+.footer__brand-highlight {
+  margin-top: -16px;
+
+}
+
+
+@media (max-width: 768px) {
+
+  /* General adjustments */
+  .footer-container .footer-container {
+    max-width: 100%;
+    margin-left: -8px;
+    padding: 0 1rem;
+  }
+
+  .footer {
+    margin-top: 5%;
+    /* padding: 2rem 0; */
+  }
+
+  .footer__columns {
+    /* flex-direction: column; */
+    /* gap: 2rem; */
+    margin-left: 22px;
+    padding: 4rem 1rem 0 0;
+
+  }
+
+  .footer__col-title {
+    font-size: 1.4rem;
+  }
+
+  .footer__nav-list {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer__copyrights {
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+
+  .footer__copyrights p {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__copyrights p a {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  /* Adjustments for parallax elements */
+  .footer__parralax {
+    height: 100px;
+    top: -60px;
+  }
+
+  .footer__parralax-moto {
+    height: 120px;
+    width: 100px;
+    margin-left: -100px;
+    bottom: 5px;
+  }
+
+  .footer__parralax-voiture {
+    height: 111px;
+    width: 179px;
+    margin-left: 100px;
+    bottom: 2px;
+
+  animation: truckDrive 8s ease-in-out infinite;
+    transform: scaleX(-1);
+  }
+
+  @keyframes truckDrive {
+  0% {
+    transform: translateX(-120vw);
+  }
+
+  100% {
+    transform: translateX(60vw);
+  }
+}
+
+
+  .footer__parralax-trees{
+    background-size: auto 80px;
+    bottom: 20px;
+  }
+
+  /* Animation speed adjustments */
+  .footer__parralax-trees {
+    animation-duration: 800s;
+  }
+
+
+  /* .footer__parralax-secondplan {
+    animation-duration: 500s;
+  } */
+
+  .footer-nav-email {
+    display: block;
+  }
+
+  .footer__col_last {
+    display: none;
+  }
+
+  .footer__nav-link i {
+    display: none;
+  }
+  
+   .blinking-text {
+    font-size: 8px;
+  }
+  .footer__columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 1rem 0rem;
+  }
+    .footer__nav {
+    font-size: small;
+
+  }
+   .blinking-text {
+    font-size: 8px !important;
+  }
+    .footer__columns {
+    padding: 4rem 1rem 0rem;
+    gap: 1rem;
+    width: 100%;
+  }
+  .footer-container{
+    max-width: min-content;
+  }
+
+  .footer__col {
+    padding: 0.8rem;
+    margin-left: -36px;
+  }
+
+  .footer__parralax {
+    height: 90px;
+    top: -50px;
+  }
+
+  .footer__parralax-moto{
+    display: none;
+  }
+    .footer__nav-list li {
+    white-space: normal;
+  }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+
+  .footer__columns {
+    grid-template-columns: 1fr 1fr; /* 2 × 2 */
+    gap: 1rem;
+    padding: 4rem 0rem 0rem;
+
+        margin-left: -85px;
+
+  }
+
+  .footer__col {
+    margin-left: 82px ;
+    padding: 0.5rem;
+    max-width: 267px;
+  }
+
+  .footer__logo {
+    margin-left: 0;
+    width: 220px;
+  }
+
+  .footer__col-title {
+    margin-left: 16px;
+    text-align: left;
+  }
+
+  .footer__nav-list li {
+   
+        white-space: inherit;
+        width: 289px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .footer-nav-email {
+    display: block;
+    
+    margin-right: 11px;
+  }
+  .footer__logo {
+    margin-left: 8px  ;
+  }
+  .footer__col_last {
+    display: none;
+  }
+
+  /* Further adjustments for smaller mobile devices */
+  .footer__col-title *~span {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .footer__col-title {
+    margin-bottom: 0;
+
+        margin-left: 10px;
+  }
+
+  .footer__nav-link i {
+    display: none;
+  }
+
+  .footer__nav-list {
+    gap: 0.8rem;
+    margin-left: -4px;
+  }
+
+  .footer__parralax {
+    height: 80px;
+    top: -40px;
+  }
+
+  .footer__parralax-moto {
+    height: 90px;
+    width: 70px;
+    margin-left: -126px;
+    bottom: 3px;
+  }
+
+  .footer__col {
+    margin-right: 3px;
+    margin-top: 19px;
+    max-width: max-content;
+  }
+
+  .footer__parralax-voiture {
+    height: 111px;
+    width: 179px;
+    margin-left: 50px;
+    bottom: 9px;
+    margin-bottom: -7px;
+    transform: scaleX(1);
+  animation: truckDrive 6s ease-in-out infinite;
+  }
+  @keyframes truckDrive {
+  0% {
+    transform: translateX(-110vw);
+  }
+
+  100% {
+    transform: translateX(60vw);
+  }
+}
+
+
+  .footer__parralax-trees {
+    background-size: auto 60px;
+  }
+
+  .footer__nav-link svg {
+    display: none;
+  }
+  
+  .blinking-text {
+    font-size: 8px;
+  }
+    .footer__columns {
+    align-items: center;
+
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-container {
+    max-width: 1280px;
+  }
+}
+
+/* =======================
+   TABLET VIEW (2 × 2 GRID)
+   ======================= */
