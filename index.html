@@ -123,12 +123,31 @@
 
     <!-- Carousel Start -->
     <!--   <div class="-fluid p-0 pb-5"> -->
-
+<section class="hero">
     <div class="owl-carousel-item position-relative vh-100">
 
         <video class="hero-video" autoplay muted loop playsinline>
             <source src="img/sslw.mp4" type="video/mp4">
         </video>
+        <!-- Hero Content -->
+<div class="container position-relative h-100 d-flex align-items-center">
+    <div class="hero-content text-center text-white mx-auto">
+
+<h1 class="hero-title">
+    Ultimate
+    <span class="rotating-wrapper">
+        <span class="rotating-text" id="rotatingText">Supply Chain</span>
+    </span>
+</h1>
+
+
+        <a href="about.html" class="hero-btn">
+            About Us
+        </a>
+
+    </div>
+</div>
+
 
         <!-- Dark overlay -->
         <div class="video-overlay"></div>
@@ -142,7 +161,8 @@
 
     </div>
 
- 
+ </section>
+
     <!-- Carousel End -->
 
 
@@ -581,9 +601,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     </p>
 
                     <div class="footer__socials">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/share/1AVZs5tT1R/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/sslw-logistics-and-warehousing-pvt-ltd/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=8109012580&text=&source=&data="><i class="fa-brands fa-whatsapp"></i></a>
 
                     </div>
                 </div>
@@ -638,22 +658,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     <!-- JavaScript Libraries -->
-     <script>
-document.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar");
-    const hero = document.querySelector(".owl-carousel-item");
-
-    if (!hero) return; // other pages → stay white
-
-    const triggerPoint = hero.offsetHeight - 80;
-
-    if (window.scrollY > triggerPoint) {
-        navbar.classList.add("navbar-scrolled");
-    } else {
-        navbar.classList.remove("navbar-scrolled");
-    }
-});
-</script>
+    <!-- navbar and crousel js -->
+    <script src="scripts/crousel.js"></script> 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
