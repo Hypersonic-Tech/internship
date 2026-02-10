@@ -1,0 +1,133 @@
+/* ================================
+   FIXED TRANSPARENT NAVBAR (NO SLIDE)
+================================ */
+
+/* Navbar base */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+        background: #ffffff;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    height: 90px;                 /* LOCK HEIGHT */
+    padding: 0 1.5rem !important; /* NO vertical padding */
+
+    display: flex;
+    align-items: center;
+
+    z-index: 1050;
+}
+
+/* Transparent over hero */
+.transparent-navbar {
+    background: transparent;
+    transition: background-color 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+/* Logo */
+.navbar-brand img {
+    max-height: 90px;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    line-height: 90px;     /* match navbar height */
+    padding: 0 15px !important;
+}
+
+/* Logo on transparent navbar */
+.transparent-navbar .navbar-brand img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+/* ===== After scroll (white navbar) ===== */
+.navbar-scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark links after scroll */
+.navbar-scrolled .nav-link {
+    color: #000 !important;
+}
+
+/* Logo back to normal */
+.navbar-scrolled .navbar-brand img {
+    filter: none;
+}
+/* Hover */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+
+    transition: filter 0.3s ease;
+}
+/* ===== HOME PAGE HERO MODE (TRANSPARENT) ===== */
+.transparent-navbar:not(.navbar-scrolled) {
+    background: transparent;
+    box-shadow: none;
+}
+
+/* White links on hero */
+.transparent-navbar:not(.navbar-scrolled) .nav-link {
+    color: #fff !important;
+}
+
+/* White logo on hero */
+.transparent-navbar:not(.navbar-scrolled) .navbar-brand img {
+    filter: brightness(0) invert(1);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    background: #fff;
+    border: none;
+}
+/* FORCE hover color even on transparent hero navbar */
+.transparent-navbar:not(.navbar-scrolled) .nav-link:hover,
+.transparent-navbar:not(.navbar-scrolled) .nav-link.active {
+    color: #0d6efd !important;
+}
+
+/* Mobile fixes */
+@media (max-width: 991.98px) {
+
+    .navbar {
+        height: auto;
+            max-height: 90px;
+    margin-left: -28px;
+    }
+
+
+
+
+
+    .navbar-nav .nav-link {
+        line-height: normal;
+        padding: 10px 0 !important;
+        color: #000 !important;
+    }
+
+    .transparent-navbar {
+        background: #fff;
+    }
+}
+
+@media (max-width: 480px ) {
+
+    
+.navbar-brand {
+
+    height: 64px;
+    width: 150px;
+}
+}
