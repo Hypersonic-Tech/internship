@@ -1,0 +1,166 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* SECTION */
+.py-24 {
+  padding: 96px 0;
+}
+
+/* CONTAINER */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.max-w-7xl {
+  max-width: 1280px;
+}
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 40px;
+}
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .lg-grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* LEFT IMAGE */
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.relative {
+  position: relative;
+}
+.rounded-2xl {
+  border-radius: 16px;
+}
+.lg-rounded-l-2xl {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.bg-indigo-700 {
+  background: #4338ca;
+}
+
+/* TITLE */
+.contact-title {
+  position: absolute;
+  top: 44px;
+  left: 44px;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* FORM */
+.form-box {
+  background: #f9fafb;
+  padding: 44px;
+  border-radius: 16px;
+}
+
+.form-title {
+  color: #4f46e5;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 44px;
+}
+
+/* INPUTS */
+.input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 40px;
+  padding-left: 16px;
+  font-size: 18px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: transparent;
+  outline: none;
+}
+
+/* RADIO */
+.mb-10 {
+  margin-bottom: 40px;
+}
+.radio-title {
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+.radio {
+  margin-right: 24px;
+  color: #6b7280;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 9999px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #3730a3;
+}
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.info-wrapper {
+  padding: 20px;
+    background: rgba(0, 0, 0, 0); /* transparent black */
+}
+
+@media (min-width: 1024px) {
+  .info-wrapper {
+    padding: 44px;
+  }
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.15); /* glass effect */
+  backdrop-filter: blur(8px);
+  padding: 9px;
+  border-radius: 12px;
+}
+
+.info-item {
+  display: block;
+  align-items: center;
+  margin-bottom: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.info-item span {
+  opacity: 0.9;
+}
+.info-item:last-child {
+  margin-bottom: 0;
+}
