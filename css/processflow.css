@@ -1,356 +1,126 @@
-.process-flow-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding:25px;
-  background-image: url("../../assets/playground.png");
-  background-repeat: no-repeat; /* Avoid repeating */
-  background-position: center; /* Center the image */
-  background-size: cover; /* Cover the entire footer */
-  background-blend-mode: overlay;
+/* SECTION BACKGROUND */
+.section--soft {
   position: relative;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 80px 0;
   overflow: hidden;
 }
 
-.Processing_steps_collection {
-  display: flex;
-  padding: 20px;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
- 
-}
-
-.process-step {
-  position: relative;
-  background: #ffffff;
-  border-radius: 0px 69px 29px 44px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 14rem;
-  height: 20rem;
-  padding: 25px;
-  text-align: center;
-  transition: all 0.4s ease;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.process-step::before {
-  content: "";
+/* Background icon (big faded logistics icon) */
+.section--soft::before {
+  content: "✈";
   position: absolute;
+  font-size: 300px;
+  color: rgba(255, 255, 255, 0.03);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  z-index: 1;
-  transition: all 0.3s ease;
+  pointer-events: none;
 }
 
-/* .process-step.step-1::before {
-  background-image: url("https://png.pngtree.com/png-vector/20221224/ourmid/pngtree-register-now-banner-design-transparent-background-png-image_6535781.png");
-} */
-
-/* .process-step.step-2::before {
-  background-image: url("https://th.bing.com/th/id/R.5232029a9047ad86459e233abbb74af5?rik=8vpD6T6dhGEiGw&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f6%2fCricket-PNG-Transparent.png&ehk=yhXVWOIyR55Vk4SkAa5TZRg8%2fdX2fEtgs576oeFsWyk%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1");
-} */
-
-/* .process-step.step-3::before {
-  background-image: url("https://clipart-library.com/2023/team-building-clipart-xl.png");
-} */
-
-/* .process-step.step-4::before {
-  background-image: url("https://walterstown.com/wp-content/uploads/2019/09/knockout-logo.png");
-} */
-
-.process-step.step-5::before {
-  background-image: url("https://www.pngall.com/wp-content/uploads/5/Cricket-PNG-Image.png");
-  opacity: 0.15;
-}
-
-.process-step.step-6::before {
-  background-image: url("https://www.freeiconspng.com/uploads/gold-trophy-cup-png-3.png");
-  opacity: 0.15;
-  width: 120px;
-  height: 120px;
-}
-
-.process-step.align-left {
-  margin-top: 0;
-}
-
-.process-step.align-right {
-  margin-top: 60px;
-}
-
-.process-step:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-.process-step:hover::before {
-  opacity: 0.25;
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.step-icon {
-  font-size: 42px;
-  margin: 15px 0;
-  color: #282a29;
-  z-index: 2;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.step-icon:hover {
-  color: #4a90e2;
-  transform: scale(1.1);
-}
-
-.step-content {
+/* Section Heading */
+.Process_heading p {
   text-align: center;
-  z-index: 2;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+/* Timeline Container */
+.Processing_steps_collection {
   position: relative;
+  max-width: 900px;
+  margin: auto;
 }
 
-.step-header {
-  margin-bottom: 20px;
-}
-
-.step-number {
-  font-size: 28px;
-  color: cadetblue;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.step-title {
-  font-size: 22px;
-  font-weight: 600;
-  color: #333;
-  margin: 10px 0;
-}
-
-.step-description {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-.process-step::after {
+/* Vertical Line */
+.Processing_steps_collection::before {
   content: "";
   position: absolute;
+  width: 4px;
+  background: linear-gradient(to bottom, #3b82f6, #22d3ee);
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.1;
-  transition: all 0.4s ease;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.process-step.step-1::after {
-  background-color: #ff7f50;
-}
-
-.process-step.step-2::after {
-  background-color: #6495ed;
-}
-
-.process-step.step-3::after {
-  background-color: #3cb371;
-}
-
-.process-step.step-4::after {
-  background-color: #ffa500;
-}
-
-.process-step.step-5::after {
-  background-color: #9370db;
-}
-
-.process-step.step-6::after {
-  background-color: #ffd700;
-}
-
-.process-step:hover::after {
-  opacity: 0.25;
-}
-
-.Process-head {
-  text-align: center;
+/* Step Base */
+.process-step {
+  width: 50%;
+  padding: 20px 40px;
   position: relative;
-  font-size: 2.5rem;
+}
+
+/* Left Alignment */
+.align-left {
+  left: 0;
+  text-align: right;
+}
+
+/* Right Alignment */
+.align-right {
+  left: 50%;
+}
+
+/* Step Card */
+.step-content {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.step-content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* Step Number Circle */
+.step-number {
+  display: inline-block;
+  background: #3b82f6;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.8rem;
   margin-bottom: 10px;
 }
 
-.Process-head::after {
-  content: 'Process Flow';
-  color: #2323231a;
-  font-size: 3.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  white-space: nowrap;
+/* Title */
+.step-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-.Process_heading {
-  display: flex;
-  gap: 10px;
-    margin-top: 100px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif; /* Headings */
-  
+/* Description */
+.step-description {
+  color: #cbd5e1;
+  font-size: 0.95rem;
 }
 
-.Process_heading h3 {
-  color: #555;
-  font-weight: 400;
-}
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .process-step {
-    width: 13rem;
-    height: 22rem;
-    padding: 20px;
-  }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .Processing_steps_collection {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .process-step {
-    width: 18rem;
-    height: auto;
-    min-height: 18rem;
-    margin-top: 0 !important;
-  }
-  
-  .Process-head::after {
-    font-size: 2.5rem;
-  }
-}
 
-@media (max-width: 480px) {
+  .Processing_steps_collection::before {
+    left: 10px;
+  }
+
   .process-step {
     width: 100%;
-    max-width: 20rem;
+    padding-left: 40px;
+    padding-right: 20px;
   }
-  .Process-head {
-    font-size: 2rem;
+
+  .align-left,
+  .align-right {
+    left: 0;
+    text-align: left;
   }
-  
-  .Process-head::after {
-    font-size: 2rem;
-  }
-}
-/* Only the Process_heading link styling */
-#style-2 {
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: #e0ebf0;
-  font-weight: 700;
-  vertical-align: top;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Pseudo-elements for underline and hover text swap */
-#style-2::before,
-#style-2::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-
-#style-2::before {
-  background-color: #e8dbdb;
-  height: 2px;
-  bottom: 0;
-  transform-origin: 100% 50%;
-  transform: scaleX(0);
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-#style-2::after {
-  content: attr(data-replace);
-  height: 100%;
-  top: 0;
-  transform-origin: 100% 50%;
-  transform: translate3d(200%, 0, 0);
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #e5eaf6;
-}
-
-#style-2:hover::before {
-  transform-origin: 0% 50%;
-  transform: scaleX(1);
-}
-
-#style-2:hover::after {
-  transform: translate3d(0, 0, 0);
-}
-
-/* Span inside the link */
-#style-2 span {
-  display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-#style-2:hover span {
-  transform: translate3d(-200%, 0, 0);
-}
-
-/* Only Process_heading styling */
-.Process_heading {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif; /* Headings */
-}
-#process_fontsize{
-  font-size: 1.75rem;
-}
-/* .process_bg{
-  background-color: #333;
-} */
- /* bg image */
- .section_image {
-    width: 100%;
-    height: 500px;   /* or 100vh */
-    overflow: hidden;
-    position: relative;
-}
-
-.img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(3px);
-    transform: scale(1.05);
 }

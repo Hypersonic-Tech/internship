@@ -57,12 +57,11 @@ p {
   display: grid;
   place-items: center;
   width: 100%;
-  max-width: 420px; /* ↓ reduced so 3 fit nicely */
-   /* ↓ slight height reduction */
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-    margin: auto;   /* centers card inside column */
+
 }
+
 
 
 .card > * {
@@ -216,4 +215,31 @@ p {
     font-family: 'Poppins', 'Inter', sans-serif;
     margin-bottom: 2rem;
 }
+/* Mobile + Tablet */
+@media (max-width: 991px) {
+
+  .card {
+    height: 20rem;
+  }
+
+  .card__content {
+    justify-content: flex-end;   /* Push content to bottom */
+    padding: 2rem 1rem 1.5rem;
+    min-height: auto;
+  }
+
+  /* Hide description */
+  .card__content--container p {
+    display: none;
+  }
+
+  /* Extra spacing above title */
+  .card__title {
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+}
+
 

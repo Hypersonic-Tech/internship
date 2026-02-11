@@ -1,0 +1,36 @@
+[33m07cfc79[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev-aditya[m[33m)[m HEAD@{0}: reset: moving to HEAD~3
+[33m64d9b34[m[33m ([m[1;31morigin/dev-krish[m[33m, [m[1;31morigin/dev-aditya[m[33m)[m HEAD@{1}: checkout: moving from main to dev-aditya
+[33mbc6d060[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{2}: checkout: moving from main to main
+[33mbc6d060[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from dev-aditya to main
+[33m64d9b34[m[33m ([m[1;31morigin/dev-krish[m[33m, [m[1;31morigin/dev-aditya[m[33m)[m HEAD@{4}: checkout: moving from dev-aditya to dev-aditya
+[33m64d9b34[m[33m ([m[1;31morigin/dev-krish[m[33m, [m[1;31morigin/dev-aditya[m[33m)[m HEAD@{5}: reset: moving to origin/dev-krish
+[33m03b213f[m HEAD@{6}: checkout: moving from dev-krish to dev-aditya
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{7}: checkout: moving from main to dev-krish
+[33mbc6d060[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{8}: checkout: moving from dev-aditya to main
+[33m03b213f[m HEAD@{9}: checkout: moving from main to dev-aditya
+[33mbc6d060[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{10}: pull origin main: Fast-forward
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{11}: checkout: moving from dev-aditya to main
+[33m03b213f[m HEAD@{12}: checkout: moving from main to dev-aditya
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{13}: checkout: moving from dev-krish to main
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{14}: checkout: moving from dev-aditya to dev-krish
+[33m03b213f[m HEAD@{15}: commit: Aded a nw element aas a logistics
+[33mc2c3f70[m HEAD@{16}: merge origin/dev-krish: Merge made by the 'ort' strategy.
+[33mcd51ba2[m HEAD@{17}: checkout: moving from dev-krish to dev-aditya
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{18}: checkout: moving from dev-aditya to dev-krish
+[33mcd51ba2[m HEAD@{19}: commit: nothing to commit
+[33mf087ddf[m HEAD@{20}: reset: moving to origin/dev-krish
+[33mf087ddf[m HEAD@{21}: reset: moving to origin/dev-krish
+[33mef959fe[m HEAD@{22}: checkout: moving from dev-aditya to dev-aditya
+[33mef959fe[m HEAD@{23}: commit (merge): Merge branch 'dev-krish' of https://github.com/Hypersonic-Tech/internship into dev-aditya
+[33mc32fa89[m HEAD@{24}: commit: nothing to commit
+[33m8ed031d[m HEAD@{25}: commit: did something with headers and awb pages
+[33mde61c1e[m HEAD@{26}: pull origin dev-aditya: Fast-forward
+[33maeb6ac5[m HEAD@{27}: pull origin dev-krish: Fast-forward
+[33mbc6d060[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{28}: pull origin dev-krish: Fast-forward
+[33m72569c0[m HEAD@{29}: commit: day-2 morning:Made awb form page
+[33m13b3942[m HEAD@{30}: commit: day-2 morning:made the cards larger and edit the font
+[33mac8b37f[m HEAD@{31}: commit: day - made changes in the seervies add cards
+[33mae745cf[m HEAD@{32}: commit: starting
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{33}: checkout: moving from dev-aditya to dev-aditya
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{34}: checkout: moving from main to dev-aditya
+[33m73d818a[m[33m ([m[1;32mdev-krish[m[33m)[m HEAD@{35}: commit (initial): starting
