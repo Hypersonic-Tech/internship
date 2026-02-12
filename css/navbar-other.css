@@ -21,11 +21,16 @@
 .nav-content{
         width: 80%;
     gap: 20px;
+    margin-right: -50px;
     font-size: larger;
     font-weight: bold;
 }
 
+.logo-horizontal{
+    max-height: 300px;
+     max-width: 800px;
 
+}
 /* Transparent initial state */
 .transparent-navbar {
     background: transparent !important;
@@ -33,43 +38,12 @@
 .transparent-navbar .nav-link {
     color: #fff !important;
 }
-/* ================================
-   DEFAULT (ALL PAGES EXCEPT HOME)
-================================ */
-
-.solid-navbar {
-    background: #1e293b !important;
-        max-height: 150px;
-    width: 100%;
-}
-
-.solid-navbar .nav-link {
-    color: #fff !important;
-}
-
-.solid-navbar .navbar-brand img {
-    filter: none;
-}
-
-.solid-navbar .navbar-toggler-icon {
-    filter: invert(1);
-}
-
-
-.logo-horizontal {
-    height: 200px;
-    width: auto;
+.transparent-navbar .navbar-brand img {
+    max-height: 150px;
+    width: 300px;
+    filter: brightness(0) invert(1);
     transition: all 0.3s ease;
 }
-
-.transparent-navbar .navbar-brand img {
-    filter: brightness(0) invert(1);
-}
-
-.solid-navbar .navbar-brand img {
-    filter: none;
-}
-
 .transparent-navbar .navbar-toggler-icon {
     filter: invert(1);
 }
@@ -83,7 +57,7 @@
     color: #fff !important;
 }
 .navbar.scrolled .navbar-brand img {
-    max-height: 200px; /* shrink logo */
+    max-height: 150px; /* shrink logo */
     filter: none;
 }
 .navbar.scrolled .navbar-toggler-icon {
@@ -106,11 +80,7 @@
         
         text-align: right;   /* content towards right */
     }
-    .logo-horizontal {
-    height: 100px;
-    width: auto;
-    transition: all 0.3s ease;
-}
+
     /* Nav links black */
     .navbar-collapse .nav-link {
         color: #000 !important;

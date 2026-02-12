@@ -35,7 +35,7 @@
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    max-width: 900px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -74,9 +74,31 @@
     border-color: #0d6efd;
     transform: translateY(-3px);
 }
-@media (max-width: 991px) {
+
+@media (max-width: 500px) {
     .hero {
-        margin-top: 80px;   /* adjust to navbar height */
+        margin-top: 0px;
+        /* adjust to navbar height */
         height: calc(100vh - 80px);
     }
+
+    .hero-video {
+        top: -25px;
+    }
+
+    .hero-content {
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+        max-width: 1024px;
+        /* margin: auto; */
+        right: 2px;
+    }
+
 }

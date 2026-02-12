@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ================= NAVBAR SCROLL ================= */
 
-  const navbar = document.querySelector(".navbar");
+  const navbar = document.querySelector(".home-navbar");
   const hero = document.querySelector(".owl-carousel-item");
 
   if (navbar && hero) {
@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const triggerPoint = hero.offsetHeight - 80;
 
       if (window.scrollY > triggerPoint) {
-        navbar.classList.add("navbar-scrolled");
+        navbar.classList.add("scrolled");
       } else {
-        navbar.classList.remove("navbar-scrolled");
+        navbar.classList.remove("scrolled");
       }
     });
   }
