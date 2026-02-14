@@ -15,6 +15,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
@@ -46,13 +47,14 @@
 
 
     <!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top solid-navbar p-0">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top solid-navbar p-0">
 
 
 
         <!-- Logo -->
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img  src="https://res.cloudinary.com/dxa5iwbyz/image/upload/v1770893037/sslwhorizontal_vvblrk.png" alt="SS Logistics Logo" class="logo-horizontal">
+            <img src="https://res.cloudinary.com/dxa5iwbyz/image/upload/v1770893037/sslwhorizontal_vvblrk.png"
+                alt="SS Logistics Logo" class="logo-horizontal">
         </a>
 
         <!-- Mobile Toggle -->
@@ -64,16 +66,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0 nav-content">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        Corporate Profile
-                    </a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="about.html" class="dropdown-item">About Us</a>
-                    </div>
-                </div>
-
+                <a href="awb-tracking.html" class="nav-item nav-link">AWB Tracking</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                         Services
@@ -85,15 +78,12 @@
                         <a href="Integrated.html" class="dropdown-item">Integrated Logistics</a>
                         <a href="Information.html" class="dropdown-item">Information Systems</a>
                         <a href="Sourcing.html" class="dropdown-item">Sourcing & Procurement</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="awb-tracking.html" class="dropdown-item fw-bold">AWB Tracking</a>
                     </div>
                 </div>
 
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-                <a href="career.html" class="nav-item nav-link">Career</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
             </div>
-        </div>
     </nav>
     <!-- Navbar End -->
 
@@ -171,61 +161,84 @@ BHOPAL-462023</span>
 
 
     <!-- Footer Start -->
-    <div class="-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
-        <!-- <div class=" py-5"> -->
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>11-A, J K ROAD INDUSTRIAL AREA, GOVINDPURA, BHOPAL-462023</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 81090-125800</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>bhupendra.sslogistics@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+    <footer class="footer">
+        <div class="footer__parralax">
+            <div class="footer__parralax-trees"></div>
+            <div class="footer__parralax-moto"></div>
+            <div class="footer__parralax-secondplan"></div>
+            <div class="footer__parralax-premierplan"></div>
+            <div class="footer__parralax-voiture"></div>
+            <div class="footer__parralax-logistics "></div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer__columns">
+
+                <!-- Logo & About -->
+                <div class="footer__col footer__about">
+                    <img src="https://res.cloudinary.com/dxa5iwbyz/image/upload/v1770893038/sslwlogo_jkrl9a.png"
+                        alt="SS Logistics Logo" class="footer__logo">
+                    <p class="footer__about-text">
+                        Backed by efficient logistics solutions, SS Logistics & Warehousing delivers
+                        reliable freight and transport services with a commitment to excellence.
+                    </p>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/share/1AVZs5tT1R/?mibextid=wwXIfr"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/sslw-logistics-and-warehousing-pvt-ltd/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=8109012580&text=&source=&data="><i
+                                class="fa-brands fa-whatsapp"></i></a>
+
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Air Freight</a>
-                    <a class="btn btn-link" href="">Sea Freight</a>
-                    <a class="btn btn-link" href="">Road Freight</a>
-                    <a class="btn btn-link" href="">Logistic Solutions</a>
-                    <a class="btn btn-link" href="">Industry solutions</a>
+
+                <!-- Address -->
+                <div class="footer__col">
+                    <p class="footer__col-title">Address</p>
+                    <ul class="footer__nav-list">
+                        <li>📍 11-A, J K Road Industrial Area, Govindpura, Bhopal-462023</li>
+                        <li>📞 +91 81091 12333, +91 81090-12580</li>
+                        <li>✉️ bhupendra.sslogistics@gmail.com</li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+
+                <!-- Services -->
+                <div class="footer__col">
+                    <p class="footer__col-title">Services</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="#">Air Freight</a></li>
+                        <li><a href="#">Road Freight</a></li>
+                        <li><a href="#">Logistic Solutions</a></li>
+                        <li><a href="#">Warehousing Solutions</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p></p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+
+                <!-- Quick Links -->
+                <div class="footer__col">
+                    <p class="footer__col-title">Quick Links</p>
+                    <ul class="footer__nav-list">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/terms">Terms & Condition</a></li>
+                        <li><a href="/support">Support</a></li>
+                    </ul>
                 </div>
+
             </div>
         </div>
-        <!-- <div class=""> -->
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Ss Logistics & Warehousing</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                     Designed By <a class="border-bottom" href="https:eogy.in">Eogy Technologies Solutions</a>
-                    </div>
-                </div>
-            </div>
+        <!-- Copyright -->
+        <div class="footer__copyrights">
+            <p>
+                © <span id="year"></span> SS Logistics & Warehousing Pvt. Ltd.
+                <span class="footer__divider">|</span>
+                All Rights Reserved.
+            </p>
         </div>
-    </div>
+
+    </footer>
     <!-- Footer End -->
 	<a href="https://api.whatsapp.com/send?phone=8109012580&text=&source=&data=" class="whatsApp" target="_blank"><i class="fab fa-whatsapp my-whatsApp"></i></a>
 
