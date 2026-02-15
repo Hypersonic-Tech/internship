@@ -31,7 +31,7 @@
 .card:after {
   content: "";
   display: block;
-  width: 190px;
+  width: 175px;
   height: 300px;
   background: #1e293b;
   position: absolute;
@@ -153,10 +153,12 @@
 
   .firstinfo .profileinfo h1 {
     font-size: 1.6rem;
+    margin-left: 85px;
   }
 
   .firstinfo .profileinfo h3 {
     font-size: 1em;
+    margin-left:33px;
   }
 }
 

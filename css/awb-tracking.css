@@ -224,3 +224,99 @@ body {
         font-size: 2.1rem;
     }
 }
+/* ================================
+   LARGE LAPTOP (1200px - 1440px)
+================================ */
+@media (max-width: 1400px) {
+
+    .container {
+        gap: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .track-card {
+        width: 420px;
+    }
+}
+
+
+/* ================================
+   LAPTOP (992px - 1200px)
+================================ */
+@media (max-width: 1200px) {
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .container {
+        width: 95%;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        max-width: 480px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.1rem;
+    }
+
+    .track-card {
+        width: 380px;
+        padding: 1.6rem;
+    }
+}
+
+
+/* ================================
+   TABLET (768px - 991px)
+================================ */
+@media (max-width: 991px) {
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .hero {
+        padding: 100px 20px;
+        min-height: auto;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .track-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+
+/* ================================
+   MOBILE (<768px)
+================================ */
+@media (max-width: 767px) {
+
+    .hero-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .track-card {
+        padding: 1.4rem;
+    }
+}
