@@ -111,11 +111,7 @@
     width: auto;
     transition: all 0.3s ease;
 }
-    /* Nav links black */
-    .navbar-collapse .nav-link {
-        color: #000 !important;
 
-    }
 
     /* Dropdown items black */
     .navbar-collapse .dropdown-item {
