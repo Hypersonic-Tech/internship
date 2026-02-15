@@ -137,13 +137,13 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .card {
-    width: 300px;
+    width: 470px;
     padding: 15px;
   }
 
   .badgescard {
-    width: 280px;
-    gap: 10px;
+    width: 440px;
+    gap: 40px;
   }
 
   .firstinfo img {
@@ -152,7 +152,7 @@
   }
 
   .firstinfo .profileinfo h1 {
-    font-size: 1.3em;
+    font-size: 1.6rem;
   }
 
   .firstinfo .profileinfo h3 {

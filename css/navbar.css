@@ -102,7 +102,7 @@
 @media (max-width: 500px) {
 /* Collapse menu background */
     .navbar-collapse {
-        background: #ffffff !important;
+        background: #1e293b !important;
         
         text-align: right;   /* content towards right */
     }
@@ -168,6 +168,78 @@
 
     .custom-navbar.scrolled .navbar-collapse .nav-link {
         color: #000 !important;
+    }
+}
+/* ================================
+   TABLET NAVBAR (768px — 991px)
+================================ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .navbar {
+        height: 80px;
+        padding: 0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Logo size for tablet */
+    .logo-horizontal {
+        height: 100px;
+        width: auto;
+    }
+
+    /* Hamburger button */
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    /* Dropdown menu */
+    .navbar-collapse {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #1e293b;
+        padding: 25px;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+    }
+
+    /* Nav links */
+    .navbar-collapse .nav-link {
+        color: #fff !important;
+        padding: 14px 0 !important;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    /* Dropdown items */
+    .navbar-collapse .dropdown-menu {
+        background: #111827;
+        border: none;
+        text-align: center;
+    }
+
+    .navbar-collapse .dropdown-item {
+        color: #fff !important;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    /* Nav container spacing */
+    .nav-content {
+        width: 100%;
+        gap: 12px;
+        font-size: 17px;
+        font-weight: 500;
     }
 }
 

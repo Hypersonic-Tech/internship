@@ -304,3 +304,168 @@ h2 {
     font-weight: 700;
     letter-spacing: 1px;
 }
+/* =========================
+   TABLET RESPONSIVE (≤ 992px)
+========================= */
+
+@media (max-width: 992px) {
+
+    /* Heading Section */
+    .heading_section {
+        height: auto;
+        padding: 40px 20px;
+        margin-top: 56px;
+    }
+
+    .Heading {
+        font-size: 32px;
+    }
+
+    .changing_heading {
+        font-size: 26px;
+    }
+
+    .changing_words {
+        width: auto;
+    }
+
+    /* Company Section */
+    .company-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .company-heading {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .company-desc {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .company-highlights {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .company-right img {
+        height: auto;
+    }
+
+    /* Journey Section */
+    .journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Advantage Section */
+    .adv-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Leaders Cards */
+    .card_collection {
+        flex-direction: column;
+        align-items: center;
+        gap: 38px;
+    }
+    .content {
+        width: 480px;   /* Bigger card */
+    }
+
+    .card {
+        padding: 30px;
+        min-height: 220px;
+    }
+    .bio{
+        display: none;
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE (≤ 576px)
+========================= */
+
+@media (max-width: 576px) {
+
+    /* Headings */
+    .Heading {
+        font-size: 26px;
+    }
+
+    .changing_heading {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 26px !important;
+    }
+
+    /* Company Section */
+    .company-modern {
+        padding: 60px 20px;
+    }
+
+    .company-heading {
+        font-size: 24px;
+    }
+
+    .company-desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .highlight-box {
+        padding: 15px;
+    }
+
+    /* Journey Section */
+    .journey-modern {
+        padding: 60px 20px;
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .journey-card {
+        padding: 20px;
+    }
+
+    /* Advantage Section */
+    .advantage-modern {
+        padding: 60px 20px;
+    }
+
+    .adv-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .adv-card {
+        padding: 20px;
+    }
+
+    /* Leadership Box */
+    .leadership-box {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Navbar Logo */
+    .logo-horizontal {
+        height: 105px;
+    }
+
+    /* Leader Cards */
+    .content {
+        width: 100%;
+    }
+    .bio{
+        display: none;
+    }
+}
