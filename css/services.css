@@ -8,6 +8,15 @@
     --text-muted:#94a3b8;
 }
 
+body{
+    background:var(--primary-dark);
+    color:var(--text-light);
+    line-height:1.7;
+
+    background:linear-gradient(135deg, var(--primary), var(--primary-light));
+
+}
+
 *{
     margin:0;
     padding:0;
@@ -17,18 +26,10 @@
 html, body{
     margin:0;
     padding:0;
+    width: 100%;
 }
 
 
-
-body{
-    background:var(--primary-dark);
-    color:var(--text-light);
-    line-height:1.7;
-
-    background:linear-gradient(135deg, var(--primary), var(--primary-light));
-
-}
 
 /* ================= HERO ================= */
 .section-hero{
@@ -75,7 +76,7 @@ body{
     flex-wrap:wrap;
     align-items: center;
     gap: 21px;
-    padding: 16px;
+    padding: 36px;
     border-radius:28px;
 
     background:linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -118,7 +119,7 @@ body{
 .image_card{
     position: relative;
     width: 100%;
-    height: 320px;
+    height: 100%;
 
     background: linear-gradient(145deg, var(--primary-soft), var(--primary-dark));
     border: 1px solid #334155;
@@ -135,12 +136,7 @@ body{
 
     overflow: hidden;
 }
-.image_card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
+
 
 .section-content h4{
     margin:20px 0 10px;
@@ -243,7 +239,7 @@ footer{
 @media(max-width:480px){
 
     .section{
-        padding:50px 15px;
+        padding:50px 0px;
         flex-direction:column;
     }
 
