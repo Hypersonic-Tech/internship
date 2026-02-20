@@ -256,20 +256,38 @@
 
 }
 
-/* Changing Word Animation */
-.changing_words::after {
-    content: "Technology and Love";
+/* Word Slider Container */
+.word-slider {
+    display: inline-block;
+    height: 49px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: bottom;
+}
+/* Words stacked vertically */
+.word-slider span {
+    display: block;
+    height: 45px;
     color: #ffffff;
-    animation: wordChange 10s infinite;
+    animation: slideWords 12s infinite;
 }
 
 /* Animation Keyframes */
-@keyframes wordChange {
+/* Slide Animation */
+@keyframes slideWords {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(0); }
 
-    0% { content: "Technology and Love"; }
-    20% { content: "Innovation"; }
-    40% { content: "Smart Supply Chain"; }
-    60% { content: "Digital Logistics"; }
+    25% { transform: translateY(-45px); }
+    45% { transform: translateY(-45px); }
+
+    50% { transform: translateY(-90px); }
+    70% { transform: translateY(-90px); }
+
+    75% { transform: translateY(-135px); }
+    95% { transform: translateY(-135px); }
+
+    100% { transform: translateY(0); }
 }
 .changing_words::after {
     content: "Technology and Love";
@@ -393,9 +411,16 @@ h2 {
     .Heading {
         font-size: 26px;
     }
+    .word-slider {
+            height: 31px;
+    }
 
     .changing_heading {
         font-size: 20px;
+    }
+    .changing_words {
+            width: 269px;
+    top: 16px;
     }
 
     h2 {
