@@ -66,17 +66,14 @@
             <div class="track-card mx-auto" style="max-width:500px;">
                 <h3 class="text-center mb-3">Track Order</h3>
 
-                <!-- UPDATED FORM -->
-                <form onsubmit="trackShipment(event)">
-                    <input type="text" id="awbno" class="form-control mb-3"
+                <!-- ✅ DIRECT REDIRECT FORM -->
+                <form method="get" action="http://3.111.146.23/shipmentTracking.aspx">
+                    <input type="text" name="AwbNo" class="form-control mb-3"
                         placeholder="Enter your AWB number" required />
                     <button type="submit" class="btn btn-primary w-100">
                         Track Shipment
                     </button>
                 </form>
-
-                <!-- RESULT AREA -->
-                <div id="trackingResult" class="mt-4"></div>
 
             </div>
         </div>
@@ -92,40 +89,9 @@
         </div>
     </footer>
 
-    <!-- SCRIPT -->
     <script>
-        function trackShipment(event) {
-            event.preventDefault();
-
-            const awb = document.getElementById("awbno").value;
-
-            fetch(`https://localhost:7042/api/shipment/${awb}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error("Shipment not found");
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    document.getElementById("trackingResult").innerHTML = `
-                        <div class="alert alert-success">
-                            <h5>Shipment Details</h5>
-                            <strong>Status:</strong> ${data.status}<br>
-                            <strong>Current Location:</strong> ${data.currentLocation}<br>
-                            <strong>Expected Delivery:</strong> ${new Date(data.expectedDelivery).toDateString()}
-                        </div>
-                    `;
-                })
-                .catch(error => {
-                    document.getElementById("trackingResult").innerHTML =
-                        `<div class="alert alert-danger">Shipment not found</div>`;
-                });
-        }
-
-        // Auto update year
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
 </body>
-
 </html>
