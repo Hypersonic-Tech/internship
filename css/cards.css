@@ -52,7 +52,8 @@ p {
 /* CARD COMPONENT */
 
 .card {
-  height: 28rem;
+
+    height: 353px;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -84,7 +85,7 @@ p {
   min-height: 55%;
   width: 100%;
   height: auto;
-  padding: 12% 1.25rem 1.875rem;
+  padding: 17% 1.25rem 1.875rem;
   background: linear-gradient(
     180deg,
     hsla(0, 0%, 0%, 0) 0%,
@@ -136,7 +137,7 @@ p {
 
 @media (any-hover: hover) and (any-pointer: fine) {
   .card__content {
-    transform: translateY(62%);
+    transform: translateY(70%);
     transition: transform 500ms ease-out;
     transition-delay: 500ms;
   }
