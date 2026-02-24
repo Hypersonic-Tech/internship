@@ -18,8 +18,8 @@
     display: flex;
     align-items: center;
 }
-.nav-content{
-        width: 80%;
+.nav-content {
+    width: 75%;
     gap: 20px;
     font-size: larger;
     font-weight: bold;
