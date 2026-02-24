@@ -80,3 +80,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+
+  // Set background images from data-bg attribute
+  document.querySelectorAll(".serve-slider-wrap").forEach(card => {
+    const bg = card.getAttribute("data-bg");
+    card.style.backgroundImage = `url(${bg})`;
+  });
+
+  const slider = document.querySelector(".serve-slider");
+  const progressBar = document.querySelector(".progress-bar");
+
+  document.querySelector(".sectors-next").addEventListener("click", () => {
+    slider.scrollBy({ left: 320, behavior: "smooth" });
+  });
+
+  document.querySelector(".sectors-prev").addEventListener("click", () => {
+    slider.scrollBy({ left: -320, behavior: "smooth" });
+  });
+
+  slider.addEventListener("scroll", () => {
+    const scrollPercent = (slider.scrollLeft / 
+      (slider.scrollWidth - slider.clientWidth)) * 100;
+    progressBar.style.width = scrollPercent + "%";
+  });
