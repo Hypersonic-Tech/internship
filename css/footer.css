@@ -324,7 +324,7 @@ body {
   width: 206px;
   height: 160px;
 
-  background: url(../img/truck1.png) no-repeat center/contain;
+  background: url(https://res.cloudinary.com/dxa5iwbyz/image/upload/v1770893046/truck1_hpt0ph.png) no-repeat center/contain;
 
   transform: translateX(0);
 
@@ -346,7 +346,7 @@ body {
 /* transform: rotate(180deg); */
 
 .footer__parralax-trees {
-  background-image: url(../img/Tree.png);
+  background-image: url(https://res.cloudinary.com/dxa5iwbyz/image/upload/v1770893044/Tree_ajkcjn.png);
   bottom: 0px;
   animation-duration: 1000s;
   z-index: 1;
