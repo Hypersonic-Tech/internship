@@ -54,6 +54,9 @@
     <link rel="stylesheet" href="css/logistics-showcase.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- map section -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/map.css">
 
 </head>
 
@@ -489,6 +492,64 @@
     </script>
 
 
+<!-- map section -->
+<!-- Shipment Coverage Section map Start -->
+
+<!-- Nationwide Coverage Section Start -->
+<!-- Coverage Stats Section Start -->
+    <section class="coverage-section">
+
+        <video autoplay muted loop playsinline class="coverage-video">
+            <source src="img/India-map.mp4" type="video/mp4">
+        </video>
+
+        <div class="coverage-overlay"></div>
+
+        <div class="coverage-content">
+
+            <!-- LEFT -->
+            <div class="coverage-text">
+
+                <span class="coverage-label">PAN INDIA NETWORK</span>
+
+                <h2>
+                    Delivering Across India
+                    <span>With Speed & Precision</span>
+                </h2>
+
+                <p>
+                    Our nationwide logistics infrastructure connects businesses
+                    to every major city and remote location with reliability,
+                    real-time tracking, and operational excellence.
+                </p>
+
+
+            </div>
+
+            <!-- RIGHT STATS -->
+            <div class="coverage-stats">
+
+                <div class="stat">
+                    <h3>All India</h3>
+                    <p>Covered</p>
+                </div>
+
+                <div class="stat">
+                    <h3>98%</h3>
+                    <p>On-Time Delivery</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- Coverage Stats Section End -->
+<!-- Nationwide Coverage Section End -->
+
+<!-- Shipment Coverage Section End -->
+
+<!-- testimonal section -->
     <section class="page-section section--dark testimonial-section">
         <div class="section-inner">
             <h2 class="testimonial-heading">From Our Community</h2>
@@ -682,6 +743,45 @@
     <script src="js/main.js"></script>
     <!-- logistics js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- map section -->
+     <!-- MAP JS -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const counters = document.querySelectorAll(".counter");
+
+    const startCounter = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
+        const speed = target / 100;
+
+        const updateCount = () => {
+            if (count < target) {
+                count += speed;
+                counter.innerText = Math.ceil(count);
+                requestAnimationFrame(updateCount);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+
+});
+</script>
 </body>
 
 </html>
